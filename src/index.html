@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css 5.* -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<!-- js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>ToDo</title>
+</head>
+<body>
+    <div class="header d-flex justify-content-evenly w-100 align-items-center">
+    <h1 class="justify-content-evenly">ToDo</h1>
+    <button id="night-day" type="button" class="btn btn-outline-light night-day rounded-circle d-flex justify-content-center align-items-center" onclick="nightMode()"><i class="bi bi-moon"></i></button>
+    
+    </div>
+    <!-- <div id="todoBody" class="todoBody d-flex justify-content-center flex-column flex-md-row align align-items-center"> -->
+        <div class="input-groups d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="input-group mb-3 w-75 w-auto">
+                <input type="text" class="form-control" id="addInput" placeholder="Add ToDo Title..." aria-label="Recipient's username" aria-describedby="button-addon1">
+                <button class="btn btn-outline-light" type="button" id="button-addon1" onclick="addTodo()">Add +</button>
+              </div>
+              <div class="input-group mb-3 w-75 w-auto">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search ToDo Title..." aria-label="Recipient's username" aria-describedby="button-addon2" onkeyup="searchArray()">
+                <button class="btn btn-outline-light" type="button" id="button-addon2">Search</button>
+              </div>
+        
+          </div>
+    <div  class="todoBody d-flex justify-content-center flex-column flex-md-row align-items-md-start align-items-center">
+        <div class="lBox justify-content-md-start w-100">
+            <h1>To Do</h1>
+            
+<div id="todoBody" class="d-flex flex-column align-items-center">
+        <div class="sBox d-flex justify-content-between">
+            <button ></button>
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between   ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between  ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="lBox justify-content-md-start w-100">
+            <h1>Not Done</h1>
+            
+<div id="todoBodyNotdone" class="d-flex flex-column align-items-center">
+        <div class="sBox d-flex justify-content-between ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between   ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between  ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="lBox justify-content-md-start w-100">
+            <h1>Done</h1>
+            
+<div id="todoBodyDone" class="d-flex flex-column align-items-center">
+        <div class="sBox d-flex justify-content-between">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between   ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+        <div class="sBox d-flex justify-content-between  ">
+            <div>
+                id: ${item.id}
+            </div>
+            <div>
+                title: ${item.title}
+            </div>
+            <div>
+                state: ${item.state}
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <button type="button" class="btn btn-danger" onclick="clearall()">CLEAR ALL</button>
+    
+    <script src="main.js"></script>
+</body>
+</html>
